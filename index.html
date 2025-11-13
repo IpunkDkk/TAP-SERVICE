@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TAP-SERVICE - Solusi IT Terpadu untuk Berbagai Sektor. Jasa website, jaringan, sistem informasi, dan CCTV. Terpercaya sejak 2024.">
+    <meta name="keywords" content="jasa IT, website development, jaringan komputer, sistem informasi, CCTV, IT infrastructure, solusi bisnis, Jabodetabek">
+    <meta property="og:title" content="TAP-SERVICE - Solusi IT Terpercaya">
+    <meta property="og:description" content="Jasa website, jaringan, sistem informasi, dan CCTV terpercaya untuk bisnis dan institusi di Jabodetabek">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/22c55e/111827?text=TAP-SERVICE">
+    <meta property="og:url" content="https://tapservice.id">
+    <title>TAP-SERVICE - Solusi IT Terpadu untuk Bisnis & Institusi</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <h1 class="brand-logo">TAP-SERVICE</h1>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Layanan</a></li>
+                <li><a href="#pricing" class="nav-link">Harga</a></li>
+                <li><a href="#portfolio" class="nav-link">Portofolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+                <li><a href="#sop" class="nav-link">SOP</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+                <li><a href="#contact" class="nav-cta">Konsultasi Gratis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Solusi IT Terpadu untuk Bisnis & Institusi</h1>
+                        <p class="hero-subtitle">Website Development • Jaringan Komputer • Sistem Informasi • CCTV & Security</p>
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn btn-primary">Minta Penawaran</a>
+                            <a href="#services" class="btn btn-secondary">Lihat Layanan</a>
+                            <button class="btn btn-outline" id="bmcBtn" onclick="openBMCModal()">Business Model</button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-icons">
+                            <div class="icon-item">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10,9 9,9 8,9"/>
+                                </svg>
+                                <span>Programming</span>
+                            </div>
+                            <div class="icon-item">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                </svg>
+                                <span>Networking</span>
+                            </div>
+                            <div class="icon-item">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                                <span>CCTV</span>
+                            </div>
+                            <div class="icon-item">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                                <span>IT Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Tentang TAP-SERVICE</h2>
+                    <p class="section-subtitle">Solusi IT Terpercaya Sejak 2024</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>TAP-SERVICE adalah perusahaan jasa IT yang menyediakan solusi teknologi informasi komprehensif untuk berbagai sektor. Dengan pengalaman dalam mengimplementasikan sistem IT untuk bisnis, institusi, dan organisasi, kami siap mendukung transformasi digital menuju era teknologi modern.</p>
+                        <div class="values">
+                            <div class="value-item">
+                                <h3>Visi</h3>
+                                <p>Menjadi partner IT terdepan dalam mendukung transformasi digital melalui teknologi inovatif dan terjangkau untuk berbagai industri.</p>
+                            </div>
+                            <div class="value-item">
+                                <h3>Misi</h3>
+                                <p>Menyediakan solusi IT komprehensif untuk bisnis dan institusi dengan fokus pada peningkatan efisiensi operasional dan produktivitas melalui teknologi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Respon Cepat</h3>
+                            <p>Tim kami siap merespon kebutuhan Anda dalam waktu 24 jam</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💰</div>
+                            <h3>Biaya Efisien</h3>
+                            <p>Solusi IT berkualitas dengan harga kompetitif</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>Garansi Purnajual</h3>
+                            <p>Support dan maintenance setelah pemasangan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Layanan Kami</h2>
+                    <p class="section-subtitle">Solusi IT Komprehensif untuk Bisnis Anda</p>
+                </div>
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Services will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Harga Layanan</h2>
+                    <p class="section-subtitle">Pilihan Layanan Fleksibel: Per Jam, Project, atau Kontrak Tahunan</p>
+                </div>
+                <div class="pricing-table" id="pricingTable">
+                    <!-- Pricing will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Modal Non-Tunai Section -->
+        <section class="modal-assets">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Modal Non-Tunai</h2>
+                    <p class="section-subtitle">Aset Strategis Kami</p>
+                </div>
+                <div class="modal-table">
+                    <div class="modal-row">
+                        <div class="modal-category">
+                            <h3>Modal Intelektual</h3>
+                            <ul>
+                                <li>Technical expertise</li>
+                                <li>Problem-solving skills</li>
+                                <li>Industry knowledge</li>
+                                <li>Best practices</li>
+                            </ul>
+                        </div>
+                        <div class="modal-category">
+                            <h3>Modal Sosial</h3>
+                            <ul>
+                                <li>Client relationships</li>
+                                <li>Partnership network</li>
+                                <li>Reputation</li>
+                                <li>Customer loyalty</li>
+                            </ul>
+                        </div>
+                        <div class="modal-category">
+                            <h3>Modal Fisik</h3>
+                            <ul>
+                                <li>Laptop dan tools pribadi</li>
+                                <li>Testing equipment</li>
+                                <li>Cable crimping tools</li>
+                                <li>Network testers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-row">
+                        <div class="modal-category">
+                            <h3>Modal Digital</h3>
+                            <ul>
+                                <li>Company website</li>
+                                <li>Social media presence</li>
+                                <li>Portfolio documentation</li>
+                                <li>Client database</li>
+                            </ul>
+                        </div>
+                        <div class="modal-category">
+                            <h3>Modal Waktu & Tenaga</h3>
+                            <ul>
+                                <li>Technical team hours</li>
+                                <li>Project management time</li>
+                                <li>Training & development</li>
+                                <li>Research & innovation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Portofolio</h2>
+                    <p class="section-subtitle">Proyek-Proyek yang Telah Kami Kerjakan</p>
+                </div>
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <!-- Portfolio items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Testimoni Klien</h2>
+                    <p class="section-subtitle">Apa Kata Klien Kami</p>
+                </div>
+                <div class="testimonial-carousel">
+                    <div class="testimonial-container" id="testimonialContainer">
+                        <!-- Testimonials will be populated by JavaScript -->
+                    </div>
+                    <div class="testimonial-controls">
+                        <button class="testimonial-btn testimonial-prev" id="prevTestimonial" aria-label="Previous testimonial">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"/>
+                            </svg>
+                        </button>
+                        <button class="testimonial-btn testimonial-next" id="nextTestimonial" aria-label="Next testimonial">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="testimonial-dots" id="testimonialDots">
+                        <!-- Dots will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOP Section -->
+        <section id="sop" class="sop">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">SOP Layanan</h2>
+                    <p class="section-subtitle">Standar Operasional Kami</p>
+                </div>
+                <div class="sop-timeline">
+                    <div class="sop-step">
+                        <div class="sop-number">1</div>
+                        <div class="sop-item">
+                            <h3>Konsultasi</h3>
+                            <p>Mendengarkan kebutuhan klien dan identifikasi masalah yang ada</p>
+                        </div>
+                    </div>
+                    <div class="sop-step">
+                        <div class="sop-number">2</div>
+                        <div class="sop-item">
+                            <h3>Analisis & Estimasi</h3>
+                            <p>Survey lokasi, analisis teknis, dan perhitungan biaya</p>
+                        </div>
+                    </div>
+                    <div class="sop-step">
+                        <div class="sop-number">3</div>
+                        <div class="sop-item">
+                            <h3>Kontrak</h3>
+                            <p>Penyusunan proposal dan kesepakatan kontrak kerja sama</p>
+                        </div>
+                    </div>
+                    <div class="sop-step">
+                        <div class="sop-number">4</div>
+                        <div class="sop-item">
+                            <h3>Eksekusi</h3>
+                            <p>Implementasi solusi IT sesuai dengan scope yang disepakati</p>
+                        </div>
+                    </div>
+                    <div class="sop-step">
+                        <div class="sop-number">5</div>
+                        <div class="sop-item">
+                            <h3>UAT & Serah Terima</h3>
+                            <p>User Acceptance Test, training, dan dokumentasi</p>
+                        </div>
+                    </div>
+                    <div class="sop-step">
+                        <div class="sop-number">6</div>
+                        <div class="sop-item">
+                            <h3>Purnajual</h3>
+                            <p>Maintenance, support, dan monitoring berkelanjutan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Pertanyaan yang Sering Diajukan</p>
+                </div>
+                <div class="faq-container" id="faqContainer">
+                    <!-- FAQ items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Hubungi Kami</h2>
+                    <p class="section-subtitle">Konsultasi Gratis untuk Kebutuhan IT Anda</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telepon</h3>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>hello@tapservice.id</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Lokasi Layanan</h3>
+                                <p>Programming: Seluruh Indonesia<br>Networking & CCTV: Pamekasan, Madura</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="whatsapp-link">
+                                    Chat via WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Nomor Telepon *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="needs">Kebutuhan *</label>
+                                <textarea id="needs" name="needs" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2 class="brand-logo">TAP-SERVICE</h2>
+                    <p class="footer-tagline">Solusi IT Terpadu untuk Bisnis & Institusi</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Layanan</h3>
+                        <ul>
+                            <li><a href="#services">Programming</a></li>
+                            <li><a href="#services">Networking</a></li>
+                            <li><a href="#services">IT Infrastructure</a></li>
+                            <li><a href="#services">CCTV & Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Perusahaan</h3>
+                        <ul>
+                            <li><a href="#about">Tentang Kami</a></li>
+                            <li><a href="#portfolio">Portofolio</a></li>
+                            <li><a href="#sop">SOP Layanan</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Kontak</h3>
+                        <ul>
+                            <li>hello@tapservice.id</li>
+                            <li>+62 812-3456-7890</li>
+                            <li>Pamekasan, Madura</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Ikuti Kami</h3>
+                        <div class="social-links">
+                            <a href="https://instagram.com/tapservice_it" target="_blank" rel="noopener" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/company/tapservice" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TAP-SERVICE. All rights reserved. | Website oleh TAP-SERVICE</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Business Model Canvas Modal -->
+<div id="bmcModal" class="modal">
+    <div class="modal-overlay" onclick="closeBMCModal()"></div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Business Model Canvas</h2>
+            <div class="modal-header-actions">
+                <button class="btn-export-pdf" onclick="exportBMCtoPDF()" aria-label="Export to PDF" title="Export to PDF">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                        <polyline points="10,9 9,9 8,9"/>
+                    </svg>
+                    <span>Export PDF</span>
+                </button>
+                <button class="modal-close" onclick="closeBMCModal()" aria-label="Close modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="bmc-grid-simple">
+                <div class="bmc-box">
+                    <h3>Key Partners</h3>
+                    <p>Supplier perangkat keras, Vendor software, Penyedia internet, Layanan cloud</p>
+                </div>
+                <div class="bmc-box">
+                    <h3>Key Activities</h3>
+                    <p>Pengembangan sistem, Setup jaringan, Instalasi hardware, Maintenance</p>
+                </div>
+                <div class="bmc-box">
+                    <h3>Key Resources</h3>
+                    <p>Tim teknis, Peralatan, Lisensi software, Kemitraan, Pengalaman</p>
+                </div>
+                <div class="bmc-box">
+                    <h3>Value Propositions</h3>
+                    <p>Solusi IT terpadu, Respon cepat, Harga terjangkau, Support lokal</p>
+                </div>
+                <div class="bmc-box">
+                    <h3>Customer Relationships</h3>
+                    <p>Support dedicated, Kemitraan jangka panjang, Maintenance rutin</p>
+                </div>
+                <div class="bmc-box">
+                    <h3>Channels</h3>
+                    <p>Website, Social media, Penjualan langsung, Referral</p>
+                </div>
+                <div class="bmc-box">
+                    <h3>Customer Segments</h3>
+                    <p>Institusi pendidikan, Perusahaan kecil-menengah, Bisnis retail</p>
+                </div>
+                <div class="bmc-box">
+                    <h3>Cost Structure</h3>
+                    <p>Biaya peralatan, Gaji karyawan, Pemasaran, Operasional</p>
+                </div>
+                <div class="bmc-box">
+                    <h3>Revenue Streams</h3>
+                    <p>Biaya project, Maintenance bulanan, Penjualan hardware, Fee konsultasi</p>
+                </div>
+            </div>
+        <!-- Tahapan Usaha Section -->
+        <div class="business-stages">
+            <div class="stage-header">
+                <h3>Tahapan Usaha</h3>
+                <p>Perjalanan Pengembangan Bisnis Kami</p>
+            </div>
+            <div class="timeline">
+                <div class="stage-item">
+                    <div class="stage-number">1</div>
+                    <div class="stage-content">
+                        <h4>Perencanaan</h4>
+                        <p>Market research, competitor analysis, service portfolio definition</p>
+                    </div>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-number">2</div>
+                    <div class="stage-content">
+                        <h4>Pembentukan Tim</h4>
+                        <p>Recruitment, technical training, role assignment, team building</p>
+                    </div>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-number">3</div>
+                    <div class="stage-content">
+                        <h4>Branding & Pemasaran</h4>
+                        <p>Brand development, website creation, social media setup</p>
+                    </div>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-number">4</div>
+                    <div class="stage-content">
+                        <h4>Pilot Project</h4>
+                        <p>Portfolio building, case studies, testimonials collection</p>
+                    </div>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-number">5</div>
+                    <div class="stage-content">
+                        <h4>Akuisisi Klien</h4>
+                        <p>Sales pipeline development, lead generation, proposal creation</p>
+                    </div>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-number">6</div>
+                    <div class="stage-content">
+                        <h4>Eksekusi & Maintenance</h4>
+                        <p>Project delivery, quality assurance, SLA management</p>
+                    </div>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-number">7</div>
+                    <div class="stage-content">
+                        <h4>Evaluasi</h4>
+                        <p>Performance review, customer feedback, continuous improvement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Non-Tunai Section dalam BMC Modal -->
+        <div class="modal-non-tunai">
+            <div class="modal-non-tunai-header">
+                <h3>Modal Non-Tunai</h3>
+                <p>Aset Strategis Kami</p>
+            </div>
+            <div class="modal-non-tunai-grid">
+                <div class="modal-non-tunai-item">
+                    <h4>Modal Intelektual</h4>
+                    <ul>
+                        <li>Technical expertise</li>
+                        <li>Problem-solving skills</li>
+                        <li>Industry knowledge</li>
+                        <li>Best practices</li>
+                    </ul>
+                </div>
+                <div class="modal-non-tunai-item">
+                    <h4>Modal Sosial</h4>
+                    <ul>
+                        <li>Client relationships</li>
+                        <li>Partnership network</li>
+                        <li>Reputation</li>
+                        <li>Customer loyalty</li>
+                    </ul>
+                </div>
+                <div class="modal-non-tunai-item">
+                    <h4>Modal Fisik</h4>
+                    <ul>
+                        <li>Laptop dan tools pribadi</li>
+                        <li>Testing equipment</li>
+                        <li>Cable crimping tools</li>
+                        <li>Network testers</li>
+                    </ul>
+                </div>
+                <div class="modal-non-tunai-item">
+                    <h4>Modal Digital</h4>
+                    <ul>
+                        <li>Company website</li>
+                        <li>Social media presence</li>
+                        <li>Portfolio documentation</li>
+                        <li>Client database</li>
+                    </ul>
+                </div>
+                <div class="modal-non-tunai-item">
+                    <h4>Modal Waktu & Tenaga</h4>
+                    <ul>
+                        <li>Technical team hours</li>
+                        <li>Project management time</li>
+                        <li>Training & development</li>
+                        <li>Research & innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
