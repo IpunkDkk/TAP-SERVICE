@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <base href="/TAP-SERVICE/" />
+    <!-- <base href="/TAP-SERVICE/" /> -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -66,21 +66,20 @@
           <div class="hero-container">
             <div class="hero-content">
               <h1 class="hero-title">
-                Solusi IT Terpadu untuk Bisnis & Institusi
+                Mitra Teknologi untuk Transformasi Digital Bisnis Anda
               </h1>
               <p class="hero-subtitle">
-                Website Development • Jaringan Komputer • Sistem Informasi •
-                CCTV & Security
+                Jasa Pembuatan Website, Instalasi Jaringan, dan Keamanan CCTV
+                Terpercaya
               </p>
               <div class="hero-actions">
                 <a href="#contact" class="btn btn-primary">Minta Penawaran</a>
                 <a href="#services" class="btn btn-secondary">Lihat Layanan</a>
                 <button
                   class="btn btn-outline"
-                  id="bmcBtn"
-                  onclick="openBMCModal()"
+                  onclick="location.href='#contact'"
                 >
-                  Business Model
+                  Hubungi Kami
                 </button>
               </div>
             </div>
@@ -164,27 +163,25 @@
           <div class="about-content">
             <div class="about-text">
               <p>
-                TAP-SERVICE adalah perusahaan jasa IT yang menyediakan solusi
-                teknologi informasi komprehensif untuk berbagai sektor. Dengan
-                pengalaman dalam mengimplementasikan sistem IT untuk bisnis,
-                institusi, dan organisasi, kami siap mendukung transformasi
-                digital menuju era teknologi modern.
+                TAP-SERVICE fokus membantu sekolah, UMKM, dan perusahaan di
+                Pamekasan dan sekitarnya untuk mengoptimalkan operasional
+                melalui teknologi. Kami menghadirkan solusi IT yang tidak hanya
+                canggih, tapi juga praktis dan sesuai kebutuhan Anda—mulai dari
+                digitalisasi administrasi hingga keamanan aset fisik.
               </p>
               <div class="values">
                 <div class="value-item">
                   <h3>Visi</h3>
                   <p>
-                    Menjadi partner IT terdepan dalam mendukung transformasi
-                    digital melalui teknologi inovatif dan terjangkau untuk
-                    berbagai industri.
+                    Menjadi partner teknologi yang solutif dan dapat diandalkan
+                    untuk kemajuan bisnis lokal.
                   </p>
                 </div>
                 <div class="value-item">
                   <h3>Misi</h3>
                   <p>
-                    Menyediakan solusi IT komprehensif untuk bisnis dan
-                    institusi dengan fokus pada peningkatan efisiensi
-                    operasional dan produktivitas melalui teknologi.
+                    Memberikan layanan IT berkualitas dengan harga yang masuk
+                    akal dan dukungan teknis yang responsif.
                   </p>
                 </div>
               </div>
@@ -236,67 +233,6 @@
           </div>
           <div class="pricing-table" id="pricingTable">
             <!-- Pricing will be populated by JavaScript -->
-          </div>
-        </div>
-      </section>
-
-      <!-- Modal Non-Tunai Section -->
-      <section class="modal-assets">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">Modal Non-Tunai</h2>
-            <p class="section-subtitle">Aset Strategis Kami</p>
-          </div>
-          <div class="modal-table">
-            <div class="modal-row">
-              <div class="modal-category">
-                <h3>Modal Intelektual</h3>
-                <ul>
-                  <li>Technical expertise</li>
-                  <li>Problem-solving skills</li>
-                  <li>Industry knowledge</li>
-                  <li>Best practices</li>
-                </ul>
-              </div>
-              <div class="modal-category">
-                <h3>Modal Sosial</h3>
-                <ul>
-                  <li>Client relationships</li>
-                  <li>Partnership network</li>
-                  <li>Reputation</li>
-                  <li>Customer loyalty</li>
-                </ul>
-              </div>
-              <div class="modal-category">
-                <h3>Modal Fisik</h3>
-                <ul>
-                  <li>Laptop dan tools pribadi</li>
-                  <li>Testing equipment</li>
-                  <li>Cable crimping tools</li>
-                  <li>Network testers</li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-row">
-              <div class="modal-category">
-                <h3>Modal Digital</h3>
-                <ul>
-                  <li>Company website</li>
-                  <li>Social media presence</li>
-                  <li>Portfolio documentation</li>
-                  <li>Client database</li>
-                </ul>
-              </div>
-              <div class="modal-category">
-                <h3>Modal Waktu & Tenaga</h3>
-                <ul>
-                  <li>Technical team hours</li>
-                  <li>Project management time</li>
-                  <li>Training & development</li>
-                  <li>Research & innovation</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -692,242 +628,7 @@
       </div>
     </footer>
 
-    <!-- Business Model Canvas Modal -->
-    <div id="bmcModal" class="modal">
-      <div class="modal-overlay" onclick="closeBMCModal()"></div>
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>Business Model Canvas</h2>
-          <div class="modal-header-actions">
-            <button
-              class="btn-export-pdf"
-              onclick="exportBMCtoPDF()"
-              aria-label="Export to PDF"
-              title="Export to PDF"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-                />
-                <polyline points="14,2 14,8 20,8" />
-                <line x1="16" y1="13" x2="8" y2="13" />
-                <line x1="16" y1="17" x2="8" y2="17" />
-                <polyline points="10,9 9,9 8,9" />
-              </svg>
-              <span>Export PDF</span>
-            </button>
-            <button
-              class="modal-close"
-              onclick="closeBMCModal()"
-              aria-label="Close modal"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="modal-body">
-          <div class="bmc-grid-simple">
-            <div class="bmc-box">
-              <h3>Key Partners</h3>
-              <p>
-                Supplier perangkat keras, Vendor software, Penyedia internet,
-                Layanan cloud
-              </p>
-            </div>
-            <div class="bmc-box">
-              <h3>Key Activities</h3>
-              <p>
-                Pengembangan sistem, Setup jaringan, Instalasi hardware,
-                Maintenance
-              </p>
-            </div>
-            <div class="bmc-box">
-              <h3>Key Resources</h3>
-              <p>
-                Tim teknis, Peralatan, Lisensi software, Kemitraan, Pengalaman
-              </p>
-            </div>
-            <div class="bmc-box">
-              <h3>Value Propositions</h3>
-              <p>
-                Solusi IT terpadu, Respon cepat, Harga terjangkau, Support lokal
-              </p>
-            </div>
-            <div class="bmc-box">
-              <h3>Customer Relationships</h3>
-              <p>
-                Support dedicated, Kemitraan jangka panjang, Maintenance rutin
-              </p>
-            </div>
-            <div class="bmc-box">
-              <h3>Channels</h3>
-              <p>Website, Social media, Penjualan langsung, Referral</p>
-            </div>
-            <div class="bmc-box">
-              <h3>Customer Segments</h3>
-              <p>
-                Institusi pendidikan, Perusahaan kecil-menengah, Bisnis retail
-              </p>
-            </div>
-            <div class="bmc-box">
-              <h3>Cost Structure</h3>
-              <p>Biaya peralatan, Gaji karyawan, Pemasaran, Operasional</p>
-            </div>
-            <div class="bmc-box">
-              <h3>Revenue Streams</h3>
-              <p>
-                Biaya project, Maintenance bulanan, Penjualan hardware, Fee
-                konsultasi
-              </p>
-            </div>
-          </div>
-          <!-- Tahapan Usaha Section -->
-          <div class="business-stages">
-            <div class="stage-header">
-              <h3>Tahapan Usaha</h3>
-              <p>Perjalanan Pengembangan Bisnis Kami</p>
-            </div>
-            <div class="timeline">
-              <div class="stage-item">
-                <div class="stage-number">1</div>
-                <div class="stage-content">
-                  <h4>Perencanaan</h4>
-                  <p>
-                    Market research, competitor analysis, service portfolio
-                    definition
-                  </p>
-                </div>
-              </div>
-              <div class="stage-item">
-                <div class="stage-number">2</div>
-                <div class="stage-content">
-                  <h4>Pembentukan Tim</h4>
-                  <p>
-                    Recruitment, technical training, role assignment, team
-                    building
-                  </p>
-                </div>
-              </div>
-              <div class="stage-item">
-                <div class="stage-number">3</div>
-                <div class="stage-content">
-                  <h4>Branding & Pemasaran</h4>
-                  <p>Brand development, website creation, social media setup</p>
-                </div>
-              </div>
-              <div class="stage-item">
-                <div class="stage-number">4</div>
-                <div class="stage-content">
-                  <h4>Pilot Project</h4>
-                  <p>
-                    Portfolio building, case studies, testimonials collection
-                  </p>
-                </div>
-              </div>
-              <div class="stage-item">
-                <div class="stage-number">5</div>
-                <div class="stage-content">
-                  <h4>Akuisisi Klien</h4>
-                  <p>
-                    Sales pipeline development, lead generation, proposal
-                    creation
-                  </p>
-                </div>
-              </div>
-              <div class="stage-item">
-                <div class="stage-number">6</div>
-                <div class="stage-content">
-                  <h4>Eksekusi & Maintenance</h4>
-                  <p>Project delivery, quality assurance, SLA management</p>
-                </div>
-              </div>
-              <div class="stage-item">
-                <div class="stage-number">7</div>
-                <div class="stage-content">
-                  <h4>Evaluasi</h4>
-                  <p>
-                    Performance review, customer feedback, continuous
-                    improvement
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal Non-Tunai Section dalam BMC Modal -->
-          <div class="modal-non-tunai">
-            <div class="modal-non-tunai-header">
-              <h3>Modal Non-Tunai</h3>
-              <p>Aset Strategis Kami</p>
-            </div>
-            <div class="modal-non-tunai-grid">
-              <div class="modal-non-tunai-item">
-                <h4>Modal Intelektual</h4>
-                <ul>
-                  <li>Technical expertise</li>
-                  <li>Problem-solving skills</li>
-                  <li>Industry knowledge</li>
-                  <li>Best practices</li>
-                </ul>
-              </div>
-              <div class="modal-non-tunai-item">
-                <h4>Modal Sosial</h4>
-                <ul>
-                  <li>Client relationships</li>
-                  <li>Partnership network</li>
-                  <li>Reputation</li>
-                  <li>Customer loyalty</li>
-                </ul>
-              </div>
-              <div class="modal-non-tunai-item">
-                <h4>Modal Fisik</h4>
-                <ul>
-                  <li>Laptop dan tools pribadi</li>
-                  <li>Testing equipment</li>
-                  <li>Cable crimping tools</li>
-                  <li>Network testers</li>
-                </ul>
-              </div>
-              <div class="modal-non-tunai-item">
-                <h4>Modal Digital</h4>
-                <ul>
-                  <li>Company website</li>
-                  <li>Social media presence</li>
-                  <li>Portfolio documentation</li>
-                  <li>Client database</li>
-                </ul>
-              </div>
-              <div class="modal-non-tunai-item">
-                <h4>Modal Waktu & Tenaga</h4>
-                <ul>
-                  <li>Technical team hours</li>
-                  <li>Project management time</li>
-                  <li>Training & development</li>
-                  <li>Research & innovation</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Tahapan Usaha Section -->
 
     <script src="script.js"></script>
   </body>

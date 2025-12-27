@@ -612,6 +612,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Business Model Canvas Modal Functions
 function openBMCModal() {
     const modal = document.getElementById('bmcModal');
+    if (!modal) return;
+    
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 
@@ -623,18 +625,21 @@ function openBMCModal() {
 
 function closeBMCModal() {
     const modal = document.getElementById('bmcModal');
+    if (!modal) return;
+
     modal.classList.remove('active');
     document.body.style.overflow = '';
 
-    // Return focus to trigger button
-    document.getElementById('bmcBtn').focus();
+    // Return focus to trigger button if it exists
+    const btn = document.getElementById('bmcBtn');
+    if (btn) btn.focus();
 }
 
 // Close modal on Escape key
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         const modal = document.getElementById('bmcModal');
-        if (modal.classList.contains('active')) {
+        if (modal && modal.classList.contains('active')) {
             closeBMCModal();
         }
     }
@@ -658,6 +663,8 @@ if ('serviceWorker' in navigator) {
 function exportBMCtoPDF() {
     // Show loading indicator
     const exportBtn = document.querySelector('.btn-export-pdf');
+    if (!exportBtn) return;
+
     const originalContent = exportBtn.innerHTML;
     exportBtn.innerHTML = `
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="animation: spin 1s linear infinite;">
