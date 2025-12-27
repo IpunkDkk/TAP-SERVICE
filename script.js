@@ -1,28 +1,27 @@
-// Data
 const servicesData = [
     {
         icon: '💻',
         title: 'Programming',
-        description: 'Pengembangan software custom untuk kebutuhan pendidikan dan institusi.',
-        features: ['Website Kampus/ sekolah', 'Sistem Akademik (SIAKAD)', 'E-Learning Platform', 'Portal Mahasiswa', 'Dashboard Administrasi']
+        description: 'Sistem digital yang dirancang khusus untuk efisiensi operasional sekolah dan institusi Anda.',
+        features: ['Website Instansi Professional', 'Sistem Informasi Akademik', 'Portal E-Learning Terpadu', 'Aplikasi Manajemen Data']
     },
     {
         icon: '🌐',
         title: 'Networking',
-        description: 'Solusi jaringan komprehensif untuk infrastruktur pendidikan modern.',
-        features: ['Jaringan Intranet Sekolah', 'WiFi Campus Area', 'Setup Lab Komputer', 'VPN untuk Remote Access', 'Network Monitoring']
+        description: 'Konektivitas stabil dan cepat untuk mendukung aktivitas belajar mengajar tanpa hambatan.',
+        features: ['Jaringan WiFi Kampus Stabil', 'Manajemen Bandwidth', 'Instalasi Lab Komputer', 'Keamanan Jaringan Intranet']
     },
     {
         icon: '🖥️',
         title: 'IT Infrastructure',
-        description: 'Pengelolaan infrastruktur IT yang optimal untuk lingkungan pendidikan.',
-        features: ['Server Akademik', 'Data Backup System', 'Computer Lab Setup', 'Cloud Storage Integration', 'Hardware Maintenance']
+        description: 'Pondasi teknologi yang kuat agar investasi hardware Anda awet dan bekerja optimal.',
+        features: ['Pemeliharaan Server', 'Sistem Backup Otomatis', 'Peremajaan Perangkat', 'Manajemen Aset IT']
     },
     {
         icon: '📹',
         title: 'CCTV & Security',
-        description: 'Sistem keamanan terpercaya untuk melindungi area kampus dan sekolah.',
-        features: ['CCTV 8-24 Channel', 'Area Coverage Luas', 'Remote Monitoring Mobile', 'Access Control System', '24/7 Recording']
+        description: 'Rasa aman maksimal dengan sistem pemantauan modern yang bisa diakses dari mana saja.',
+        features: ['CCTV Online 24 Jam', 'Akses Pantau via HP', 'Instalasi Rapi & Aman', 'Sistem Alarm Terintegrasi']
     }
 ];
 
@@ -201,15 +200,65 @@ let currentTestimonial = 0;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
-    initializeNavigation();
+    // Update Year First
+    const yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
+    initializeTheme();
+    try { initializeNavigation(); } catch(e) { console.log('Nav init failed', e); }
     renderServices();
     renderPricing();
     renderPortfolio();
     initializeTestimonials();
     renderFAQ();
     initializeContactForm();
-    initializeScrollAnimations();
+    try { initializeScrollAnimations(); } catch(e) { console.log('Scroll init failed', e); }
 });
+
+// Theme Toggle Logic
+function initializeTheme() {
+    const themeToggleBtn = document.getElementById('themeToggle');
+    if (!themeToggleBtn) return;
+
+    // Check saved preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'light' || (!savedTheme && !prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'light');
+        updateThemeIcon(false);
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        updateThemeIcon(true);
+    }
+
+    themeToggleBtn.addEventListener('click', toggleTheme);
+}
+
+function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    updateThemeIcon(newTheme === 'dark');
+}
+
+function updateThemeIcon(isDark) {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+
+    // Simple SVG icons
+    const sunIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
+    const moonIcon = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+
+    btn.innerHTML = isDark ? sunIcon : moonIcon;
+    btn.setAttribute('aria-label', isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+}
 
 // Navigation
 function initializeNavigation() {

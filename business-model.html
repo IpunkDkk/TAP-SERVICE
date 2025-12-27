@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>TAP-SERVICE - Business Model</title>
     <link
       rel="icon"
@@ -12,9 +13,11 @@
     <style>
         /* Specific overrides for this internal page */
         .internal-header {
-            padding: 2rem 0;
-            background: var(--bg);
-            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 0;
+            background: var(--nav-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border-bottom: 1px solid var(--card-border);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -24,35 +27,18 @@
             justify-content: space-between;
             align-items: center;
         }
-        .page-title {
-            margin: 4rem 0 2rem;
-            text-align: center;
-            color: var(--primary);
-        }
-        .content-section {
-            padding: 4rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-        /* Reuse existing classes but ensure visibility */
-        .bmc-grid-simple {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-        .bmc-box {
-            background: var(--card);
-            padding: 2rem;
-            border-radius: var(--radius);
-            border: 1px solid var(--border);
-        }
-        .bmc-box h3 { color: var(--primary); }
     </style>
   </head>
   <body>
     <header class="internal-header">
         <div class="container internal-nav">
             <h1 class="brand-logo" style="margin:0; font-size: 1.5rem;">TAP-SERVICE <span style="font-weight: 400; font-size: 1rem; color: var(--text-secondary);">| Internal Strategy</span></h1>
-            <a href="index.html" class="btn btn-outline">← Back to Home</a>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <!-- Icon injected by JS -->
+                </button>
+                <a href="index.html" class="btn btn-outline">← Back to Home</a>
+            </div>
         </div>
     </header>
 
@@ -237,7 +223,7 @@
 
     <footer class="footer">
         <div class="container text-center" style="text-align: center; padding: 2rem;">
-            <p>&copy; 2024 TAP-SERVICE. Internal Document.</p>
+            <p>&copy; <span id="currentYear">2025</span> TAP-SERVICE. Internal Document.</p>
         </div>
     </footer>
 
