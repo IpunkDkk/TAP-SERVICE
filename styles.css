@@ -845,7 +845,7 @@ section {
 
 .portfolio-link:hover {
   background: var(--primary);
-  color: var(--text);
+  color: var(--text-primary);
   border-color: var(--primary);
 }
 
@@ -902,7 +902,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text);
+  color: var(--text-primary);
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -912,7 +912,7 @@ section {
 }
 
 .testimonial-name {
-  color: var(--text);
+  color: var(--text-primary);
   font-weight: 600;
 }
 
@@ -944,7 +944,7 @@ section {
 
 .testimonial-btn:hover {
   background: var(--primary);
-  color: var(--text);
+  color: var(--text-primary);
   border-color: var(--primary);
 }
 
@@ -1000,7 +1000,7 @@ section {
   width: 80px;
   height: 80px;
   background: var(--accent);
-  color: var(--text);
+  color: var(--text-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1029,7 +1029,7 @@ section {
 }
 
 .sop-item h3 {
-  color: var(--text);
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
@@ -1070,7 +1070,7 @@ section {
 }
 
 .faq-question {
-  color: var(--text);
+  color: var(--text-primary);
   font-size: 1.125rem;
   font-weight: 600;
   margin: 0;
@@ -1134,12 +1134,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text);
+  color: var(--text-primary);
   flex-shrink: 0;
 }
 
 .contact-details h3 {
-  color: var(--text);
+  color: var(--text-primary);
   margin-bottom: 0.25rem;
 }
 
@@ -1170,7 +1170,7 @@ section {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  color: var(--text);
+  color: var(--text-primary);
   font-weight: 500;
 }
 
@@ -1181,7 +1181,7 @@ section {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  color: var(--text);
+  color: var(--text-primary);
   font-family: inherit;
   transition: var(--transition);
 }
@@ -1233,7 +1233,7 @@ section {
 }
 
 .footer-section h3 {
-  color: var(--text);
+  color: var(--text-primary);
   margin-bottom: 1rem;
   font-size: 1.125rem;
 }
@@ -1274,7 +1274,7 @@ section {
 
 .social-links a:hover {
   background: var(--primary);
-  color: var(--text);
+  color: var(--text-primary);
 }
 
 .footer-bottom {
@@ -1340,7 +1340,7 @@ section {
 }
 
 .modal-header h2 {
-  color: var(--text);
+  color: var(--text-primary);
   margin: 0;
 }
 
@@ -1361,7 +1361,7 @@ section {
   align-items: center;
   gap: 0.5rem;
   background: var(--primary);
-  color: var(--text);
+  color: var(--text-primary);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: var(--radius);
@@ -1499,7 +1499,7 @@ section {
 }
 
 .bmc-box h3 {
-  color: var(--text);
+  color: var(--text-primary);
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -1565,7 +1565,7 @@ section {
   width: 80px;
   height: 80px;
   background: var(--primary);
-  color: var(--text);
+  color: var(--text-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1588,7 +1588,7 @@ section {
 }
 
 .business-stages .stage-content h4 {
-  color: var(--text);
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
 
